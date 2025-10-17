@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saint Gardens Yachting — Charters & Tours</title>
+  <meta name="description" content="Saint Gardens Yachting — Charters de luxo, tours privados e eventos a bordo no litoral. Reserva o teu iate hoje." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fbfbfb; --accent:#0b6b63; --muted:#6b6b6b; --card:#ffffff;
+      --radius:12px; --maxw:1100px;
+      --shadow: 0 6px 20px rgba(11,107,99,0.08);
+      font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#222;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .brand .logo{
+      width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#0e9d8b);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:var(--shadow);
+      font-size:16px;
+    }
+    nav{display:flex;gap:12px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:28px 0}
+    .hero .eyebrow{color:var(--accent);font-weight:700}
+    .hero h1{margin:8px 0 12px;font-size:34px;line-height:1.05}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .btn{display:inline-block;background:var(--accent);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(11,107,99,0.12)}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .features .f{padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#f8f8f8);text-align:center}
+    .fleet{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+    .boat{border-radius:10px;overflow:hidden;background:#fff;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .boat img{width:100%;height:180px;object-fit:cover}
+    .boat .meta{padding:12px}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    section{padding:28px 0}
+    footer{padding:18px 0;color:var(--muted);font-size:14px}
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e5e5e5;font-size:15px}
+    textarea{min-height:120px;resize:vertical}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .success{display:none;padding:12px;border-radius:10px;background:#e6fffa;border:1px solid #bff0e6;color:#00513f}
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .fleet{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(3,1fr)}
+      nav{display:none}
+    }
+    @media (max-width:560px){
+      .fleet{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .two{grid-template-columns:1fr}
+      .hero h1{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">SG</div>
+        <div>
+          <div style="font-weight:700">Saint Gardens Yachting</div>
+          <div style="font-size:13px;color:var(--muted)">Charters & Eventos Privados</div>
+        </div>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#about">Sobre</a>
+        <a href="#fleet">Frota</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#book">Reservas</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="home-title">
+        <div>
+          <div class="eyebrow">Experiências Náuticas</div>
+          <h1 id="home-title">Charters personalizados no Atlântico — luxo, segurança e privacidade</h1>
+          <p>Do dia de passeio ao evento privado a bordo. Frota moderna, capitães experientes e roteiros sob medida. Operamos no Porto Santo, Madeira e outras rotas personalizadas.</p>
+          <div style="display:flex;gap:12px;align-items:center">
+            <a class="btn" href="#book">Reservar um charter</a>
+            <a href="#fleet" style="padding:12px 16px;border-radius:10px;text-decoration:none;border:1px solid #eee;color:var(--muted)">Ver frota</a>
+          </div>
+
+          <div class="features" aria-hidden="false" style="margin-top:20px">
+            <div class="f"><strong>Capitães certificados</strong><div style="font-size:13px;color:var(--muted)">Segurança em primeiro lugar</div></div>
+            <div class="f"><strong>Eventos & casamentos</strong><div style="font-size:13px;color:var(--muted)">Pacotes personalizados</div></div>
+            <div class="f"><strong>Transfers VIP</strong><div style="font-size:13px;color:var(--muted)">Porto Santo & Madeira</div></div>
+          </div>
+        </div>
+
+        <aside class="card" aria-label="Resumo rápido">
+          <h3 style="margin:0 0 8px">Reserva rápida</h3>
+          <p style="margin:0 0 12px;color:var(--muted)">Preenche os detalhes e nós confirmamos disponibilidade em 24h.</p>
+
+          <form id="quick-book" onsubmit="handleQuickBook(event)">
+            <input name="name" placeholder="Nome completo" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <div class="two">
+              <input type="date" name="date" required />
+              <select name="boat" required>
+                <option value="">Escolher embarcação</option>
+                <option value="Sailor 40">Sailor 40 — 8 pax</option>
+                <option value="Azure 55">Azure 55 — 12 pax</option>
+                <option value="Explorer 28">Explorer 28 — 6 pax</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Pedir disponibilidade</button>
+            <div id="quick-success" class="success" role="status">Pedido enviado — obrigado! Verifica o teu email.</div>
+          </form>
+
+          <div style="margin-top:12px;font-size:13px;color:var(--muted)">
+            <strong>Contato directo:</strong><br/>
+            +351 912 345 678<br/>
+            hello@saintgardensyachting.example
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <div class="card">
+          <h2 id="about-title">Sobre a Saint Gardens Yachting</h2>
+          <p style="color:var(--muted)">Fundada por entusiastas do mar, a Saint Gardens Yachting combina conforto e experiência profissional para criar charters memoráveis. Oferecemos passeios diurnos, eventos privados, transferes e roteiros personalizados com atenção ao detalhe.</p>
+          <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+            <div style="min-width:220px">
+              <strong>Serviços</strong>
+              <ul style="margin:6px 0 0 18px;color:var(--muted)">
+                <li>Passeios de dia</li>
+                <li>Charters privados</li>
+                <li>Eventos & casamentos</li>
+                <li>Pesca de lazer</li>
+              </ul>
+            </div>
+            <div style="min-width:220px">
+              <strong>Segurança & conforto</strong>
+              <p style="margin:6px 0 0;color:var(--muted)">Todas as embarcações cumprem normas CE, seguro de passageiros e tripulação certificada.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fleet" aria-labelledby="fleet-title">
+        <h2 id="fleet-title">A nossa frota</h2>
+        <div class="fleet">
+          <article class="boat" aria-label="Sailor 40">
+            <img src="https://picsum.photos/seed/boat1/800/600" alt="Sailor 40 — iate a vela" />
+            <div class="meta">
+              <h3 style="margin:0 0 6px">Sailor 40</h3>
+              <div style="color:var(--muted);font-size:14px">Iate a vela — até 8 pax · 2 cabines · capitão incluído</div>
+            </div>
+          </article>
+
+          <article class="boat" aria-label="Azure 55">
+            <img src="https://picsum.photos/seed/boat2/800/600" alt="Azure 55 — powerboat de luxo" />
+            <div class="meta">
+              <h3 style="margin:0 0 6px">Azure 55</h3>
+              <div style="color:var(--muted);font-size:14px">Powerboat — até 12 pax · espaço lounge · catering disponível</div>
+            </div>
+          </article>
+
+          <article class="boat" aria-label="Explorer 28">
+            <img src="https://picsum.photos/seed/boat3/800/600" alt="Explorer 28 — embarcação pequena" />
+            <div class="meta">
+              <h3 style="margin:0 0 6px">Explorer 28</h3>
+              <div style="color:var(--muted);font-size:14px">Rápida e ágil — ideal para transfers e passeios rápidos (6 pax)</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title">Galeria</h2>
+        <div class="gallery" role="list">
+          <img src="https://picsum.photos/seed/gal1/600/400" alt="Vista do mar 1" />
+          <img src="https://picsum.photos/seed/gal2/600/400" alt="Pôr do sol no mar" />
+          <img src="https://picsum.photos/seed/gal3/600/400" alt="Evento a bordo" />
+          <img src="https://picsum.photos/seed/gal4/600/400" alt="Deck e esplanada" />
+        </div>
+      </section>
+
+      <section id="book" aria-labelledby="book-title">
+        <h2 id="book-title">Reserva & Contacto</h2>
+        <div style="display:grid;grid-template-columns:1fr 380px;gap:16px">
+          <div class="card">
+            <h3>Formulário de reserva</h3>
+            <p style="color:var(--muted)">Envia-nos os detalhes da tua reserva — responderemos com disponibilidade e um orçamento personalizado.</p>
+
+            <!-- Exemplo com Formspree: substitui ACTION pela tua URL do Formspree ou usa a lógica JS abaixo -->
+            <form id="booking-form" onsubmit="handleBooking(event)">
+              <div class="two">
+                <input name="name" placeholder="Nome completo" required />
+                <input type="email" name="email" placeholder="Email" required />
+              </div>
+              <div class="two">
+                <input name="phone" placeholder="Telefone" />
+                <input type="date" name="date" />
+              </div>
+              <select name="boat">
+                <option value="">Embarcação (opcional)</option>
+                <option>Sailor 40</option>
+                <option>Azure 55</option>
+                <option>Explorer 28</option>
+              </select>
+              <textarea name="message" placeholder="Mensagem / pedidos especiais"></textarea>
+              <button class="btn" type="submit">Enviar pedido</button>
+              <div id="book-success" class="success" role="status">Pedido enviado. Iremos contactar-te em breve.</div>
+            </form>
+          </div>
+
+          <aside class="card">
+            <h4>Contacto</h4>
+            <p style="margin:6px 0;color:var(--muted)">Telefone: +351 912 345 678<br/>Email: hello@saintgardensyachting.example</p>
+            <h4 style="margin-top:12px">Localização</h4>
+            <p style="margin:6px 0;color:var(--muted)">Porto Santo / Ilha da Madeira (operamos em múltiplas rotas)</p>
+            <!-- Google Maps embed (substitui coords pela localização real) -->
+            <div style="border-radius:8px;overflow:hidden;margin-top:8px">
+              <iframe title="Mapa — Porto Santo" src="https://www.google.com/maps?q=porto+santo&output=embed" width="100%" height="200" style="border:0"></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year"></span> Saint Gardens Yachting — Todos os direitos reservados</div>
+        <div style="color:var(--muted)">Feito com ❤️ · <a href="#" style="color:var(--accent);text-decoration:none">Termos & Privacidade</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Quick-book demo: mostra success e limpa formulário. Substituir por integração real (Formspree, Zapier, API).
+    function handleQuickBook(e){
+      e.preventDefault();
+      const form = e.target;
+      document.getElementById('quick-success').style.display = 'block';
+      setTimeout(()=>{ form.reset(); }, 600);
+    }
+
+    // Booking form demo: valida e mostra mensagem. Para envio real: integrar Formspree or backend.
+    function handleBooking(e){
+      e.preventDefault();
+      const success = document.getElementById('book-success');
+      success.style.display = 'block';
+      e.target.reset();
+      window.scrollTo({top: success.getBoundingClientRect().top + window.scrollY - 80, behavior:'smooth'});
+    }
+
+    // Progressive enhancement: if user wants to integrate email via mailto (not ideal for long msgs)
+    // Example (not active): window.location.href = 'mailto:hello@saintgardensyachting.example?subject=Reserva...';
+  </script>
+</body>
+</html>
